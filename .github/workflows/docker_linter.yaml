@@ -11,5 +11,4 @@ jobs:
     container: hadolint/hadolint:latest-debian
     steps:
       - uses: actions/checkout@v3
-      - run: ls 
       - run: hadolint Dockerfile 

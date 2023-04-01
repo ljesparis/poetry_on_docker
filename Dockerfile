@@ -6,6 +6,9 @@ ENV \
    POETRY_VERSION=1.4.0 \
    PATH="$PATH:/poetry/bin"
 
+# https://github.com/hadolint/hadolint/issues/250#issuecomment-409891140
+SHELL [ "/bin/ash", "-eo", "pipefail", "-c" ]
+
 RUN apk --no-cache add curl==7.88.1-r1 && \
    curl -sSL https://install.python-poetry.org | python -
 
