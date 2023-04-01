@@ -11,5 +11,5 @@ jobs:
     container: hadolint/hadolint:latest-debian
     steps:
       - uses: actions/checkout@v3
-      - run: ls python_on_docker/
+      - run: ls 
       - run: hadolint python_on_docker/
