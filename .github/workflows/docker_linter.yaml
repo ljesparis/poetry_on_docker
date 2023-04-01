@@ -8,7 +8,7 @@ on:
 jobs:
   linter:
     runs-on: ubuntu-latest
-    container: hadolint/hadolint
+    container: hadolint/hadolint:latest-debian
     steps:
       - uses: actions/checkout@v3
       - run: ls python_on_docker/
